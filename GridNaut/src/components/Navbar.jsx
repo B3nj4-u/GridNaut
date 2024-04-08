@@ -16,7 +16,7 @@ const NAV_ITEMS = [
 function Navbar() {
   const navigate = useNavigate();
   const location = useLocation();
-  const [activeSection, setActiveSection] = useState('');
+  const [activeSection, setActiveSection] = useState('carrusel');
 
   useEffect(() => {
     if (location.pathname !== '/') {
