@@ -1,8 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import './TarjetaServicio.css';
+import './ServiciosTarjeta.css';
 
-const TarjetaServicio = ({ image, text, onClick }) => {
+const ServiciosTarjeta = ({ image, text, onClick }) => {
   return (
     <motion.div className="tarjeta-servicio" onClick={onClick}
       animate={{ rotate: 0 }} // Vuelve a la posición original cuando el mouse ya no está encima
@@ -17,4 +17,4 @@ const TarjetaServicio = ({ image, text, onClick }) => {
   );
 };
 
-export default TarjetaServicio;
+export default ServiciosTarjeta;

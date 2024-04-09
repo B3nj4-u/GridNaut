@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import './Servicios.css';
-import TarjetaServicio from './TarjetaServicio';
+import ServiciosTarjeta from './ServiciosTarjeta';
 import ServiciosModal from './ServiciosModal';
 import image1 from './servicios_images/image1.png';
 import image2 from './servicios_images/image2.png';
@@ -34,22 +34,13 @@ const Servicios = () => {
 
   return (
     <div>
-      <h1
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          height: "30vh",
-          margin: "0",
-          marginTop: "15vh",
-        }}
-      >
+      <h1 className='servicios-h1'      >
         Nuestros Servicios
       </h1>
 
       <div className="services-container">
         {services.map((service) => (
-          <TarjetaServicio
+          <ServiciosTarjeta
             key={service.id}
             image={service.image}
             text={service.text}
