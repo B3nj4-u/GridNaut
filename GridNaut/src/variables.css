@@ -1,11 +1,14 @@
 :root {
     --color-primary: rgba(30, 255, 0, 0.87);
-    --color-background: #0000009d;
+    --color-background: #1b18189d;
     --color-background-solid: black;
-    --color-link: #646cff;
-    --color-link-hover: #9f9f9f;
+    --color-link: rgba(30, 255, 0, 0.87);
+    --color-link-hover: red;
     --color-button: #1a1a1a;
-    --color-button-hover: #64ff80;
+    --color-button-hover: rgba(30, 255, 0, 0.87);
     --color-card-container: gray;
+    --color-card-shadow: rgba(30, 255, 0, 0.87);
+    --color-card-shadow-hover: red;
+    --color-card-text: rgb(255, 255, 255);
   }
   

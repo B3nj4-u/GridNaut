@@ -10,15 +10,15 @@
   .tarjeta-servicio {
     flex-basis: calc(28% - 10px);
     margin: 20px;
-    background: white;
+    background: var(--color-card-container);
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 var(--color-card-shadow);
     transition: 0.3s;
   }
   
   .tarjeta-servicio:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 var(--color-card-shadow-hover);
     transform: translateY(-5px); /* Añade este efecto para mover la tarjeta hacia arriba */
   }
   
@@ -29,7 +29,7 @@
   }
   
   .tarjeta-servicio p {
-    color: black;
+    color: var(--color-card-text);
     padding: 10px;
     text-align: center;
   }
