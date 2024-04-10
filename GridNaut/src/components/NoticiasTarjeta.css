@@ -16,9 +16,12 @@
   }
   
   .noticias-tarjeta img {
-    width: 100%;
+    width: 80%;
     height: auto;
     border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   .noticias-tarjeta h2 {
@@ -44,5 +47,11 @@
   
   .noticias-tarjeta a:hover {
     background-color: #0056b3;
+  }
+  
+  .noticias-tarjeta p.fecha {
+    font-size: 0.8em; /* Ajusta el tamaño de la letra */
+    color: #938989; /* Ajusta el color de la letra */
+    margin-top: -20px; /* Ajusta el espacio entre el título y la fecha */
   }
   

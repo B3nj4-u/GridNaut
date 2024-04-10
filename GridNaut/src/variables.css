@@ -1,0 +1,11 @@
+:root {
+    --color-primary: rgba(30, 255, 0, 0.87);
+    --color-background: #0000009d;
+    --color-background-solid: black;
+    --color-link: #646cff;
+    --color-link-hover: #9f9f9f;
+    --color-button: #1a1a1a;
+    --color-button-hover: #64ff80;
+    --color-card-container: gray;
+  }
+  
