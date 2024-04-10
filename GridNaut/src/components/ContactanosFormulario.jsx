@@ -4,6 +4,11 @@ import { motion, AnimatePresence } from "framer-motion";
 import { FaSpinner } from "react-icons/fa";
 import "./ContactanosFormulario.css";
 
+const idService = import.meta.env.VITE_SERVICE_ID;
+const idTemplate = import.meta.env.VITE_TEMPLATE_ID;
+const idUser = import.meta.env.VITE_USER_ID;
+
+
 const ContactanosFormulario = () => {
   const [loading, setLoading] = useState(false);
   const [telefono, setTelefono] = useState("");
@@ -15,13 +20,13 @@ const ContactanosFormulario = () => {
   const sendEmail = (e) => {
     e.preventDefault();
     setLoading(true);
-
+  
     emailjs
       .sendForm(
-        "service_gjcwy98",
-        "template_t73b13b",
+        idService,
+        idTemplate,
         e.target,
-        "UTOnoaFzvgtc3sJp8"
+        idUser
       )
       .then(
         (result) => {
