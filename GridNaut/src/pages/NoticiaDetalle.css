@@ -5,7 +5,9 @@
   box-sizing: border-box;
   background-color: var(--color-card-container);
   border-radius: 20px; /* Ajusta el radio del borde para que sea consistente */
-  box-shadow: 0 8px 16px 0 var(--color-card-shadow); /* Opcional: añade una sombra para resaltar la tarjeta */
+  box-shadow: 0 8px 16px 0 var(--color-card-shadow); 
+  margin-left: 250px;
+  margin-top: -100px;
 }
 
 .noticia-detalle img {
@@ -32,4 +34,17 @@
   font-size: 14px;
   margin-top: -20px;
   color: var(--color-card-text);
+}
+
+.atras-button {
+  padding: 10px 20px;
+  background-color: var(--color-background-solid);
+  color: var(--color-primary);
+  text-decoration: none;
+  font-size: 25px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 var(--color-card-shadow);
+  border: 2px solid var(--color-primary);
+  margin-top: 150px; 
+  margin-left: 20px;
 }

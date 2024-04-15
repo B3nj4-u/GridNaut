@@ -1,14 +1,14 @@
 :root {
-    --color-primary: rgba(30, 255, 0, 0.87);
-    --color-background: #1b18189d;
-    --color-background-solid: black;
-    --color-link: rgba(30, 255, 0, 0.87);
-    --color-link-hover: red;
-    --color-button: #1a1a1a;
+    --color-primary: black;
+    --color-background: rgba(255, 255, 200, 1);
+    --color-background-solid: rgba(255, 255, 200, 1);
+    --color-link: rgb(212, 0, 255);
+    --color-link-hover: rgba(30, 255, 0, 0.87);
+    --color-button: rgba(255, 255, 200, 1);
     --color-button-hover: rgba(30, 255, 0, 0.87);
-    --color-card-container: gray;
-    --color-card-shadow: rgba(30, 255, 0, 0.87);
-    --color-card-shadow-hover: red;
+    --color-card-container: black;
+    --color-card-shadow: rgb(212, 0, 255);
+    --color-card-shadow-hover: rgba(30, 255, 0, 0.87);
     --color-card-text: rgb(255, 255, 255);
   }
   

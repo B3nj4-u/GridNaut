@@ -45,7 +45,7 @@
 .contactanos-formulario input[type="submit"] {
   margin-top: 20px;
   padding: 10px 20px;
-  background-color: var(--color-primary);
+  background-color: var(--color-link);
   color: var(--color-card-text);
   border: none;
   cursor: pointer;
