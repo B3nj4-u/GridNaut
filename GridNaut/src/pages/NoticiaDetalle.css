@@ -48,3 +48,8 @@
   margin-top: 150px; 
   margin-left: 20px;
 }
+
+.atras-button:hover {
+    box-shadow: 0 8px 16px 0 var(--color-card-shadow-hover);
+    border: 2px solid var(--color-primary);
+}
