@@ -1,13 +1,13 @@
-/* NoticiaDetalle.css */
 .noticia-detalle {
   max-width: 800px;
   margin: 100px auto; /* Añade un margen superior de 50px */
   padding: 20px;
   box-sizing: border-box;
-  border: 1px solid #ccc;
-  background-color: #ffffff;
+  background-color: var(--color-card-container);
   border-radius: 20px; /* Ajusta el radio del borde para que sea consistente */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Opcional: añade una sombra para resaltar la tarjeta */
+  box-shadow: 0 8px 16px 0 var(--color-card-shadow); 
+  margin-left: 250px;
+  margin-top: -100px;
 }
 
 .noticia-detalle img {
@@ -19,18 +19,37 @@
 
 .noticia-detalle h1 {
   font-size: 24px;
-  color: #333;
+  color: var(--color-card-text);
   margin-bottom: 20px; /* Añade un margen inferior al título */
 }
 
 .noticia-detalle p {
   font-size: 18px;
-  color: #666;
+  color: var(--color-card-text);
   line-height: 1.6;
   margin-bottom: 20px; /* Añade un margen inferior a los párrafos */
 }
 
 .noticia-detalle .fecha-publicacion {
   font-size: 14px;
-  color: #999;
+  margin-top: -20px;
+  color: var(--color-card-text);
+}
+
+.atras-button {
+  padding: 10px 20px;
+  background-color: var(--color-background-solid);
+  color: var(--color-primary);
+  text-decoration: none;
+  font-size: 25px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 var(--color-card-shadow);
+  border: 2px solid var(--color-primary);
+  margin-top: 150px; 
+  margin-left: 20px;
+}
+
+.atras-button:hover {
+    box-shadow: 0 8px 16px 0 var(--color-card-shadow-hover);
+    border: 2px solid var(--color-primary);
 }

@@ -1,48 +1,58 @@
 /* NoticiasTarjeta.css */
 .noticias-tarjeta {
-    border: 1px solid #ccc;
     padding: 20px;
     margin: 20px;
     width: calc(33% - 40px);
     box-sizing: border-box;
     border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 var(--color-card-shadow);
     transition: 0.3s;
-    background-color: #fff;
+    background-color: var(--color-card-container);
   }
   
   .noticias-tarjeta:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 var(--color-card-shadow-hover);
   }
   
   .noticias-tarjeta img {
-    width: 100%;
+    width: 80%;
     height: auto;
     border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   .noticias-tarjeta h2 {
     font-size: 20px;
-    color: #333;
+    color: var(--color-card-text);
   }
   
   .noticias-tarjeta p {
     font-size: 16px;
-    color: #666;
+    color: var(--color-card-text);
   }
   
   .noticias-tarjeta a {
     display: inline-block;
     margin-top: 10px;
     padding: 10px 20px;
-    background-color: #007BFF;
-    color: #fff;
+    background-color: var(--color-primary);
+    color: var(--color-card-text);
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px 0 var(--color-card-shadow);
   }
   
   .noticias-tarjeta a:hover {
-    background-color: #0056b3;
+    background-color: var(--color-primary);
+    box-shadow: 0 8px 16px 0 var(--color-card-shadow-hover);
+  }
+  
+  .noticias-tarjeta p.fecha {
+    font-size: 0.8em; /* Ajusta el tamaño de la letra */
+    color: var(--color-card-text); /* Ajusta el color de la letra */
+    margin-top: -20px; /* Ajusta el espacio entre el título y la fecha */
   }
   

@@ -1,0 +1,14 @@
+:root {
+    --color-primary: black;
+    --color-background: rgba(255, 255, 200, 1);
+    --color-background-solid: rgba(255, 255, 200, 1);
+    --color-link: rgb(212, 0, 255);
+    --color-link-hover: rgba(30, 255, 0, 0.87);
+    --color-button: rgba(255, 255, 200, 1);
+    --color-button-hover: rgba(30, 255, 0, 0.87);
+    --color-card-container: black;
+    --color-card-shadow: rgb(212, 0, 255);
+    --color-card-shadow-hover: rgba(30, 255, 0, 0.87);
+    --color-card-text: rgb(255, 255, 255);
+  }
+  
