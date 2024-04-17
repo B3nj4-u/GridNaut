@@ -47,7 +47,7 @@ function NoticiaDetalle() {
         <p className="fecha-publicacion">
           Fecha de publicación: {fechaFormateada}
         </p>
-        <p>{noticia.contenido}</p>
+        <p className="noticia-contenido">{noticia.contenido}</p>
         <img src={noticia.url_imagen} alt="Imagen de la noticia" />
       </div>
     </>

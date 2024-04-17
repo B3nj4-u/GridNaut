@@ -2,7 +2,7 @@
 .noticias-tarjeta {
     padding: 20px;
     margin: 20px;
-    width: calc(33% - 40px);
+    width: 100%;
     box-sizing: border-box;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 var(--color-card-shadow);
@@ -56,3 +56,14 @@
     margin-top: -20px; /* Ajusta el espacio entre el título y la fecha */
   }
   
+  @media (min-width: 600px) {
+    .noticias-tarjeta {
+      width: 50%;
+    }
+  }
+  
+  @media (min-width: 900px) {
+    .noticias-tarjeta {
+      width: 30%;
+    }
+  }

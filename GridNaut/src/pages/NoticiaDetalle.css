@@ -1,11 +1,11 @@
 .noticia-detalle {
-  max-width: 800px;
+  max-width: 70%; /* Ajusta el ancho máximo del contenedor al 80% del ancho de la pantalla */
   margin: 100px auto; /* Añade un margen superior de 50px */
   padding: 20px;
   box-sizing: border-box;
   background-color: var(--color-card-container);
   border-radius: 20px; /* Ajusta el radio del borde para que sea consistente */
-  box-shadow: 0 8px 16px 0 var(--color-card-shadow); 
+  box-shadow: 0 8px 16px 0 var(--color-card-shadow);
   margin-left: 250px;
   margin-top: -100px;
 }
@@ -45,11 +45,49 @@
   border-radius: 20px;
   box-shadow: 0 4px 8px 0 var(--color-card-shadow);
   border: 2px solid var(--color-primary);
-  margin-top: 150px; 
+  margin-top: 150px;
   margin-left: 20px;
+  position: relative;
 }
 
 .atras-button:hover {
-    box-shadow: 0 8px 16px 0 var(--color-card-shadow-hover);
-    border: 2px solid var(--color-primary);
+  box-shadow: 0 8px 16px 0 var(--color-card-shadow-hover);
+  border: 2px solid var(--color-primary);
+}
+
+/* Cuando la pantalla es menor a 600px */
+@media (max-width: 600px) {
+  .noticia-detalle {
+    margin-left: 13vh;
+    max-width: 120vh;
+  }
+  .noticia-detalle h1 {
+    font-size: 15px; /* Ajusta este valor al tamaño de fuente deseado para los títulos */
+  }
+
+  .fecha-publicacion {
+    font-size: 5px; /* Ajusta este valor al tamaño de fuente deseado para la fecha de publicación */
+  }
+  .noticia-detalle p {
+    font-size: 10px; /* Ajusta este valor al tamaño de fuente deseado para los párrafos */
+  }
+
+  .atras-button {
+    font-size: 8px;
+    padding: 8px 16px;
+    bottom: 140px;
+    left: 80vh;
+  }
+}
+
+/* Cuando la pantalla es mayor a 600px */
+@media (min-width: 600px) {
+  .noticia-detalle {
+    margin-left: 250px;
+  }
+
+  .atras-button {
+    font-size: 18px;
+    padding: 15px 30px;
+  }
 }

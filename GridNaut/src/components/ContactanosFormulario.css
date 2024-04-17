@@ -4,7 +4,7 @@
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 10px 20px var(--color-card-shadow);
-  width: 400px;
+  width: 30%;
   margin: 0 auto;
   margin-top: 340px;
   display: flex;
@@ -14,7 +14,7 @@
   transition: all 0.3s ease-in-out;
   position: relative;
   top: 0%;
-  left: 17.5%;
+  left: 15%;
   margin-bottom: -200px;
   transform: translate(-50%, -50%);
 }
@@ -23,7 +23,7 @@
   display: block;
   margin-top: 20px;
   font-size: 1.2em;
-  width: 340px;
+  width: 120%;
   color: var(--color-card-text);
 }
 
@@ -55,4 +55,11 @@
 .contactanos-formulario input[type="submit"]:hover {
   background-color: var(--color-card-shadow-hover);
   transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+  .contactanos-formulario {
+    width: 80%;
+    margin-left: 45vh;
+  }
 }

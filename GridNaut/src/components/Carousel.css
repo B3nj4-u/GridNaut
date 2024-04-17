@@ -1,9 +1,10 @@
 .carousel {
   position: relative;
-  width: 100%;
+  width: 98.7vw;
   height: 100vh;
   overflow: hidden;
   margin-top: -50px;
+  margin-bottom: 200px;
 }
 
 .carousel-image {
@@ -34,3 +35,5 @@
   box-shadow: 0 8px 16px 0 var(--color-card-shadow-hover);
   border: 2px solid var(--color-primary);
 }
+
+

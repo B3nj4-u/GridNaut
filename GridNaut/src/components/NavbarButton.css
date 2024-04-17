@@ -1,0 +1,48 @@
+/* NavbarButton.css */
+.navbar-button {
+  align-items: center;
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  z-index: 1000;
+  border: 2px solid var(--color-primary);
+  box-shadow: 0 4px 8px 0 var(--color-card-shadow);
+  border-radius: 10px;
+  background-color: var(--color-card-shadow);
+  width: 85px;
+}
+.navbar-button:hover {
+  box-shadow: 0 8px 16px 0 var(--color-card-shadow-hover);
+}
+
+.navbar-button button {
+  align-items: center;
+  background-color: var(--color-card-shadow);
+}
+.menu-icon {
+  text-align: center;
+  font-size: 20px; /* Ajusta este valor a tu gusto */
+}
+
+
+.navbar-button ul {
+  flex-direction: column;
+  margin-right: 20px;
+  margin-left: -10px;
+}
+
+@media (min-width: 600px) {
+  .navbar-button {
+    display: none;
+  }
+}
+
+.navbar-button.contraido {
+  width: 50px; /* Ajusta este valor a tu gusto */
+}
+
+/* Estado expandido */
+.navbar-button.expandido {
+  width: 85px; /* Ajusta este valor a tu gusto */
+}

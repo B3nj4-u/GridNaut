@@ -16,7 +16,7 @@ function Noticias() {
     <>
       <h1 className="noticias-h1">Noticias</h1>
 
-      <div style={{ display: "flex", flexWrap: "wrap" }}>
+      <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
         {noticias.map((noticia, index) => (
           <NoticiasTarjeta key={index} noticia={noticia} />
         ))}

@@ -7,11 +7,13 @@ import Contactanos from './pages/Contactanos';
 import ErrorPage from './pages/ErrorPage';
 import Footer from './components/Footer';
 import NoticiaDetalle from './pages/NoticiaDetalle';
+import NavbarButton from './components/NavbarButton';
 
 function App() {
   return (
     <Router>
       <Navbar />
+      <NavbarButton />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/noticias" element={<Noticias />} />

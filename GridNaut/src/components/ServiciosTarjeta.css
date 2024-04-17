@@ -1,35 +1,51 @@
 .services-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 85%;
-    margin: auto;
-    padding: 0 5%;
-  }
-  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 85%;
+  margin: auto;
+  padding: 0 5%;
+}
+
+.tarjeta-servicio {
+  flex-basis: calc(100% - 40px); /* Cambia a 1 tarjeta por fila por defecto */
+  margin: 20px;
+  background: var(--color-card-container);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 var(--color-card-shadow);
+  transition: 0.3s;
+}
+
+.tarjeta-servicio:hover {
+  box-shadow: 0 8px 16px 0 var(--color-card-shadow-hover);
+  transform: translateY(
+    -5px
+  ); /* Añade este efecto para mover la tarjeta hacia arriba */
+}
+
+.service-image {
+  width: 100%;
+  height: 240px; /* Ajusta este valor según el tamaño que desees para las imágenes */
+  object-fit: cover;
+}
+
+.tarjeta-servicio p {
+  color: var(--color-card-text);
+  text-align: center;
+}
+
+/* Para pantallas de al menos 480px de ancho */
+@media (min-width: 480px) {
   .tarjeta-servicio {
-    flex-basis: calc(28% - 10px);
-    margin: 20px;
-    background: var(--color-card-container);
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px 0 var(--color-card-shadow);
-    transition: 0.3s;
+    flex-basis: calc(50% - 40px); /* Cambia a 2 tarjetas por fila */
   }
-  
-  .tarjeta-servicio:hover {
-    box-shadow: 0 8px 16px 0 var(--color-card-shadow-hover);
-    transform: translateY(-5px); /* Añade este efecto para mover la tarjeta hacia arriba */
+}
+
+/* Para pantallas de al menos 768px de ancho */
+@media (min-width: 768px) {
+  .tarjeta-servicio {
+    flex-basis: calc(33.33% - 40px); /* Cambia a 3 tarjetas por fila */
+    width: 90%;
   }
-  
-  .service-image {
-    width: 100%;
-    height: 240px; /* Ajusta este valor según el tamaño que desees para las imágenes */
-    object-fit: cover;
-  }
-  
-  .tarjeta-servicio p {
-    color: var(--color-card-text);
-    text-align: center;
-  }
-  
+}

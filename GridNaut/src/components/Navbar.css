@@ -9,7 +9,7 @@ nav {
   z-index: 1000;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid var(--color-primary);
   box-shadow: 0 4px 8px 0 var(--color-card-shadow);
 }
 
@@ -49,4 +49,10 @@ nav li a:hover {
 
 nav .logo {
   height: 40px;
+}
+
+@media (max-width: 600px){
+  nav {
+    display: none;
+  }
 }

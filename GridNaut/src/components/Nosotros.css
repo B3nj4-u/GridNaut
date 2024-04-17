@@ -18,3 +18,42 @@
   margin-left: 200px;
   margin-right: 200px;
 }
+
+@media (min-width: 1200px) {
+  .nosotros {
+    margin: 0 100px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1199px) {
+  .nosotros {
+    margin: 0 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .nosotros-texto {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+
+@media (max-width: 600px) {
+  .nosotros {
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nosotros-h1 {
+    text-align: center;
+    margin-top: 40vh;
+    margin-bottom: 40vh;
+  }
+  .nosotros-texto {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
